@@ -1,3 +1,21 @@
-class Student 
+ require_relative './user'
+    class Student < User
+        attr_accessor :knowledge
+    
+        @knowledge=[]
 
-end
+        def initialize
+            @knowledge=[]        
+       end
+   
+       def knowledge
+           @knowledge
+       end    
+   
+       def learn(string)
+           @knowledge << string
+       end    
+   
+   end
+   
+   fhides=Student.new 
